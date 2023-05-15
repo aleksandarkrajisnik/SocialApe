@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  position: relative;
+
+  .appWrapper {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 60px);
+
+    .formContainer {
+      background-image: url("./assets/images/leaves-background.jpg");
+      background-size: cover;
+      background-position: center 15%;
+      padding-bottom: 30px;
+      height: 100vh;
+    }
+  }
+}
+.screamDialog {
+  background-image: url("./assets/images/leaves-background.jpg");
+  background-size: contain;
+}
+a {
+  text-decoration: none;
+  color: #40916c; //primary main
+  &:hover {
+    color: #1b4332;
+  }
+}
+
+.homeContainer {
+  background-image: url("./assets/images/leaves-background.jpg");
+  background-size: cover;
+  background-position: center 25%;
+}
+.loadingSpinner {
+  width: 50px;
+  animation: loadingSpinner 0.6s linear infinite;
+}
+@keyframes loadingSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
